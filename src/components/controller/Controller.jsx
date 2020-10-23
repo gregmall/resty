@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 const Controller = ({
   url,
   text,
- 
   onChange,
   onSubmit,
   
@@ -15,13 +14,13 @@ const Controller = ({
   <form onSubmit={onSubmit}>
   <label htmlFor="url">ENTER URL</label>
   <input
-    id="text"
-    type="text"
+    id="url"
+    type="url"
     name="url"
     value={url}
     onChange={onChange}
    
-    />
+    /><br />
     <label htmlFor="method">GET</label>
     <input
     id="method"
@@ -29,7 +28,7 @@ const Controller = ({
     name="method"
     value='GET'
     onChange={onChange}
-    />
+    /><br />
      <label htmlFor="method">POST</label>
     <input
     id="method"
@@ -37,7 +36,7 @@ const Controller = ({
     name="method"
     value='POST'
     onChange={onChange}
-    />
+    /><br />
      <label htmlFor="method">DELETE</label>
     <input
     id="method"
@@ -45,7 +44,7 @@ const Controller = ({
     name="method"
     value='DELETE'
     onChange={onChange}
-    />
+    /><br />
      <label htmlFor="method">PUT</label>
     <input
     id="method"
@@ -53,8 +52,8 @@ const Controller = ({
     name="method"
     value='PUT'
     onChange={onChange}
-    />
-    <label htmlFor="url">enter json</label>
+    /><br />
+    <label htmlFor="text">enter json</label>
   <input
     id="text"
     type="text"
@@ -62,7 +61,7 @@ const Controller = ({
     value={text}
     onChange={onChange}
    
-    />
+    /><br />
     
     <button type="submit">SUBMIT</button>
 
@@ -72,7 +71,6 @@ const Controller = ({
 Controller.propTypes = {
   url: PropTypes.string.isRequired,
   text: PropTypes.string.isRequired,
-  method: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   onSubmit: PropTypes.func.isRequired
 };

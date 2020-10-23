@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component renders App 1`] = `
+exports[`Controller component renders Controller 1`] = `
 <DocumentFragment>
   <form>
     <label
@@ -72,7 +72,7 @@ exports[`App component renders App 1`] = `
       id="text"
       name="text"
       type="text"
-      value=""
+      value="Test Display"
     />
     <br />
     <button

@@ -7,25 +7,25 @@ import Controller from '../components/controller/Controller';
 
 export default class Resty extends Component {
   state = {
+    
     url: '',
     text: '',
     method: '',
     history: []
    
-
-
   }
   handleChange= ({ target })=> {
     this.setState({ [target.name]: target.value });
-    console.log(target.name)
+    
   };
-
-  handleSubmit = () => {
-
+  handleSubmit = (e) => {
+    e.preventDefault();
+    fetch(this.state.url)
+    .then(this.state.history.push(this.state.url, this.state.method))
+    .then(console.log)
+    
   };
 ;
-
-  
 
 render() {
   const { url, text, method} = this.state
@@ -40,8 +40,6 @@ render() {
     onSubmit={this.handleSubmit}
     />
     </>
-
-
 
 
 );
