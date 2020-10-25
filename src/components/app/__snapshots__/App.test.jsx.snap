@@ -2,13 +2,16 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <form>
+  <form
+    class="Controller"
+  >
     <label
       for="url"
     >
       ENTER URL
     </label>
     <input
+      class="url"
       id="url"
       name="url"
       type="url"
@@ -68,11 +71,11 @@ exports[`App component renders App 1`] = `
     >
       enter json
     </label>
-    <input
+    <textarea
+      class="text"
       id="text"
       name="text"
-      type="text"
-      value=""
+      type="textarea"
     />
     <br />
     <button

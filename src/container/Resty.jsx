@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Controller from '../components/controller/Controller';
+import  fetchApi  from '../services/fetch-api';
 
 
 
@@ -20,9 +21,18 @@ export default class Resty extends Component {
   };
   handleSubmit = (e) => {
     e.preventDefault();
-    fetch(this.state.url)
-    .then(this.state.history.push(this.state.url, this.state.method))
-    .then(console.log)
+    fetchApi({
+      url: this.state.url,
+      method: this.state.method
+    })
+    .then(this.setState(state => ({
+      history: [
+        ...state.history,
+        { url: state.url, method: state.method }
+
+      ]
+    })))
+    
     
   };
 ;

@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Controller.css'
 
 const Controller = ({
   url,
@@ -11,9 +12,10 @@ const Controller = ({
 
 }) => (
 
-  <form onSubmit={onSubmit}>
+  <form onSubmit={onSubmit} className={styles.Controller}>
   <label htmlFor="url">ENTER URL</label>
   <input
+    className="url"
     id="url"
     type="url"
     name="url"
@@ -54,9 +56,10 @@ const Controller = ({
     onChange={onChange}
     /><br />
     <label htmlFor="text">enter json</label>
-  <input
+  <textarea
+    className="text"
     id="text"
-    type="text"
+    type="textarea"
     name="text"
     value={text}
     onChange={onChange}

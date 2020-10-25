@@ -7,8 +7,11 @@ describe('Controller component', () => {
 
   it('renders Controller', () => {
     const { asFragment } = render(<Controller
+      url="www.url.com"
       text="Test Display"
+      method="method"
       handleChange={() => {}}
+      handleSubmit={() => {}}
     />);
     expect(asFragment()).toMatchSnapshot();
   });
