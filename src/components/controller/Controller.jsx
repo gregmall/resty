@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styles from './Controller.css'
+import  './Controller.css'
 
 const Controller = ({
   url,
@@ -12,9 +12,10 @@ const Controller = ({
 
 }) => (
 
-  <form onSubmit={onSubmit} className={styles.Controller}>
+  <form onSubmit={onSubmit} >
   <label htmlFor="url">ENTER URL</label>
   <input
+    
     className="url"
     id="url"
     type="url"

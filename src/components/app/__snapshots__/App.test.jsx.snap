@@ -2,9 +2,7 @@
 
 exports[`App component renders App 1`] = `
 <DocumentFragment>
-  <form
-    class="Controller"
-  >
+  <form>
     <label
       for="url"
     >

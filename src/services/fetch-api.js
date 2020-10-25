@@ -4,5 +4,5 @@ export default ({ url, method })  => {
     headers: { 'Content-Type': 'application/json' },
 
   })
-  .then(res => res.json90);
+  .then(res => res.json());
 };
