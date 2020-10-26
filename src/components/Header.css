@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
 Header{
   background-color: #f0a64d;
-  margin: 10px;
   padding: 10px;
-  border-radius: 10px;
   font-family: "Sacramento", cursive;
   font-size: 30px;
 }
