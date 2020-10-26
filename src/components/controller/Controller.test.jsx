@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, cleanup } from '@testing-library/react';
-import  Controller from './controller';
+import  Controller from './Controller';
 
 describe('Controller component', () => {
   afterEach(() => cleanup());
