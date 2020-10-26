@@ -2,6 +2,9 @@
 
 exports[`HistoryItem component displays a history item 1`] = `
 <DocumentFragment>
+  <h2>
+    History
+  </h2>
   <section
     class="HistoryItem"
   >
@@ -12,6 +15,9 @@ exports[`HistoryItem component displays a history item 1`] = `
         Url: www.website.com
     </p>
   </section>
+  <h2>
+    History
+  </h2>
   <section
     class="HistoryItem"
   >
@@ -22,6 +28,9 @@ exports[`HistoryItem component displays a history item 1`] = `
         Url: www.another.com
     </p>
   </section>
+  <h2>
+    History
+  </h2>
   <section
     class="HistoryItem"
   >
