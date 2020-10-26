@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Controller component renders Controller 1`] = `
+<DocumentFragment>
+  <form>
+    <label
+      for="url"
+    >
+      ENTER URL
+    </label>
+    <input
+      class="url"
+      id="url"
+      name="url"
+      placeholder="Type URL here"
+      type="url"
+      value="www.url.com"
+    />
+    <br />
+    <label
+      for="method"
+    >
+      GET
+    </label>
+    <input
+      id="method"
+      name="method"
+      type="radio"
+      value="GET"
+    />
+    <label
+      for="method"
+    >
+      POST
+    </label>
+    <input
+      id="method"
+      name="method"
+      type="radio"
+      value="POST"
+    />
+    <label
+      for="method"
+    >
+      DELETE
+    </label>
+    <input
+      id="method"
+      name="method"
+      type="radio"
+      value="DELETE"
+    />
+    <label
+      for="method"
+    >
+      PUT
+    </label>
+    <input
+      id="method"
+      name="method"
+      type="radio"
+      value="PUT"
+    />
+    <button
+      data-testid="submit"
+      type="submit"
+    >
+      SUBMIT
+    </button>
+    <br />
+    <textarea
+      class="text"
+      id="text"
+      name="text"
+      placeholder="Enter Raw JSON Body"
+      type="textarea"
+    >
+      Test Display
+    </textarea>
+    <br />
+  </form>
+</DocumentFragment>
+`;
