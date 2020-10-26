@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Controller from '../components/controller/Controller';
 import Display from '../components/display/Display';
-import  fetchApi  from '../services/fetch-api';
-
-
+import HistoryList from '../components/history/HistoryList';
+import fetchApi  from '../services/fetch-api';
+import styles from './Resty.css'
 
 
 
@@ -14,7 +14,7 @@ export default class Resty extends Component {
     text: '',
     method: '',
     history: [],
-    result: ''
+    result: {}
    
   }
   handleChange= ({ target })=> {
@@ -38,12 +38,11 @@ export default class Resty extends Component {
     
   };
 
-
 render() {
   const { url, text, method, history, result} = this.state
 
   return (
-   <div>
+   <div >
     <Controller 
     text ={text}
     url = {url}
@@ -51,8 +50,17 @@ render() {
     onChange={this.handleChange} 
     onSubmit={this.handleSubmit}
     />
+    <section className={styles.main}>
+      <div className={styles.display}>
     <Display result= {result} />
-   </div>
+    </div>
+    <div className={styles.history}>
+    <HistoryList history = {history}/>
+    </div>
+    </section>
+    
+    </div>
+ 
 
 );
 

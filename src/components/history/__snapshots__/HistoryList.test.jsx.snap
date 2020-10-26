@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HistoryItem component displays a history item 1`] = `
+<DocumentFragment>
+  <section>
+    <p>
+      Method: GET
+    </p>
+    <p>
+      Url: www.website.com
+    </p>
+  </section>
+  <section>
+    <p>
+      Method: PUT
+    </p>
+    <p>
+      Url: www.another.com
+    </p>
+  </section>
+  <section>
+    <p>
+      Method: DELETE
+    </p>
+    <p>
+      Url: www.there.com
+    </p>
+  </section>
+</DocumentFragment>
+`;

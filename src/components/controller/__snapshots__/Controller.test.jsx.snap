@@ -3,6 +3,9 @@
 exports[`Controller component renders Controller 1`] = `
 <DocumentFragment>
   <form>
+    <h1>
+      RESTy
+    </h1>
     <label
       for="url"
     >
@@ -27,7 +30,6 @@ exports[`Controller component renders Controller 1`] = `
       type="radio"
       value="GET"
     />
-    <br />
     <label
       for="method"
     >
@@ -39,7 +41,6 @@ exports[`Controller component renders Controller 1`] = `
       type="radio"
       value="POST"
     />
-    <br />
     <label
       for="method"
     >
@@ -51,7 +52,6 @@ exports[`Controller component renders Controller 1`] = `
       type="radio"
       value="DELETE"
     />
-    <br />
     <label
       for="method"
     >

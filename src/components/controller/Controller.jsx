@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import  './Controller.css'
+import styles from  './Controller.css'
 
 const Controller = ({
   url,
@@ -13,10 +13,11 @@ const Controller = ({
 }) => (
 
   <form onSubmit={onSubmit} >
+    <h1>RESTy</h1>
   <label htmlFor="url">ENTER URL</label>
   <input
     
-    className="url"
+    className={styles.url}
     id="url"
     type="url"
     name="url"
@@ -31,7 +32,7 @@ const Controller = ({
     name="method"
     value='GET'
     onChange={onChange}
-    /><br />
+    />
      <label htmlFor="method">POST</label>
     <input
     id="method"
@@ -39,7 +40,7 @@ const Controller = ({
     name="method"
     value='POST'
     onChange={onChange}
-    /><br />
+    />
      <label htmlFor="method">DELETE</label>
     <input
     id="method"
@@ -47,7 +48,7 @@ const Controller = ({
     name="method"
     value='DELETE'
     onChange={onChange}
-    /><br />
+    />
      <label htmlFor="method">PUT</label>
     <input
     id="method"

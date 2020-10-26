@@ -1,4 +1,4 @@
-export default ({ url, method })  => {
+const fetchApi = ({ url, method })  => {
   return fetch(url, {
     method,
     headers: { 'Content-Type': 'application/json' },
@@ -6,3 +6,4 @@ export default ({ url, method })  => {
   })
   .then(res => res.json());
 };
+export default fetchApi;
