@@ -2,28 +2,34 @@
 
 exports[`HistoryItem component displays a history item 1`] = `
 <DocumentFragment>
-  <section>
+  <section
+    class="HistoryItem"
+  >
     <p>
       Method: GET
     </p>
     <p>
-      Url: www.website.com
+        Url: www.website.com
     </p>
   </section>
-  <section>
+  <section
+    class="HistoryItem"
+  >
     <p>
       Method: PUT
     </p>
     <p>
-      Url: www.another.com
+        Url: www.another.com
     </p>
   </section>
-  <section>
+  <section
+    class="HistoryItem"
+  >
     <p>
       Method: DELETE
     </p>
     <p>
-      Url: www.there.com
+        Url: www.there.com
     </p>
   </section>
 </DocumentFragment>

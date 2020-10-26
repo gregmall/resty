@@ -6,8 +6,6 @@ import HistoryList from '../components/history/HistoryList';
 import fetchApi  from '../services/fetch-api';
 import styles from './Resty.css'
 
-
-
 export default class Resty extends Component {
   state = {
     
@@ -26,16 +24,16 @@ export default class Resty extends Component {
     e.preventDefault();
     fetchApi({
       url: this.state.url,
-      method: this.state.method
+      method: this.state.method,
+      text: this.state.text
     })
     .then(result => this.setState({ result }));
     this.setState(state => ({
       history: [
         ...state.history,
         { url: state.url, method: state.method }
-
       ]
-    }));
+      }));
   };
 
 render() {
@@ -43,25 +41,25 @@ render() {
 
   return (
     <>
-    <Header/>
+      <Header/>
     
-   <div className={styles.main}>
+      <div className={styles.main}>
      
-     <div className={styles.display}>
-    <Controller 
-    text ={text}
-    url = {url}
-    method = {method}
-    onChange={this.handleChange} 
-    onSubmit={this.handleSubmit}
-    />
+        <div className={styles.display}>
+          <Controller 
+            text ={text}
+            url = {url}
+            method = {method}
+            onChange={this.handleChange} 
+            onSubmit={this.handleSubmit}
+         />
     
-    <Display result= {result} />
-    </div>
+          <Display result= {result} />
+        </div>
    
-    <div className={styles.history}>
-    <HistoryList history = {history}/>
-    </div>
+      <div className={styles.history}>
+          <HistoryList history = {history}/>
+      </div>
    
     
     

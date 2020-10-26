@@ -3,9 +3,6 @@
 exports[`Controller component renders Controller 1`] = `
 <DocumentFragment>
   <form>
-    <h1>
-      RESTy
-    </h1>
     <label
       for="url"
     >
@@ -15,6 +12,7 @@ exports[`Controller component renders Controller 1`] = `
       class="url"
       id="url"
       name="url"
+      placeholder="Type URL here"
       type="url"
       value="www.url.com"
     />
@@ -63,26 +61,23 @@ exports[`Controller component renders Controller 1`] = `
       type="radio"
       value="PUT"
     />
-    <br />
-    <label
-      for="text"
+    <button
+      data-testid="submit"
+      type="submit"
     >
-      enter json
-    </label>
+      SUBMIT
+    </button>
+    <br />
     <textarea
       class="text"
       id="text"
       name="text"
+      placeholder="Enter Raw JSON Body"
       type="textarea"
     >
       Test Display
     </textarea>
     <br />
-    <button
-      type="submit"
-    >
-      SUBMIT
-    </button>
   </form>
 </DocumentFragment>
 `;

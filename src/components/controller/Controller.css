@@ -1,16 +1,13 @@
-.text{
-  width: 800px;
-  
-}
+
 
 textarea{
   width: 400px;
-  height: 200px;
+  height: 100px;
 }
 .button {
-  background-color: aqua;
+  background-color: rgb(202, 85, 17);
 
 }
 .url{
-  width: 800px;
+  width: 500px;
 }

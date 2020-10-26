@@ -1,8 +1,8 @@
 section{
   display: flex;
   flex-wrap: wrap;
-  border: 1px black solid;
+  padding: 5px;
   border-radius: 8px;
-  background-color: grey;
+  background-color: rgb(238, 152, 95);
   margin: 5px;
 }

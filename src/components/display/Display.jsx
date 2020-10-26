@@ -5,12 +5,12 @@ import  ReactJson from 'react-json-view';
 const Display = ({ result }) => {
   
   return (
-    <div>{
+    <div data-testid="display">{
      
-      <ReactJson data-testid="result" src={result} />
+      <ReactJson  src={result} />
     }
       
-   </div>
+    </div>
   );
 };
 
