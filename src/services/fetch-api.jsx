@@ -11,6 +11,7 @@ const fetchApi = ({ url, method, text })  => {
       method,
       headers: { 'Content-Type': 'application/json' }
     })
+    .then(res => res.json());
   }
 };
 export default fetchApi;
