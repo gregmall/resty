@@ -1,0 +1,8 @@
+section{
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px black solid;
+  border-radius: 8px;
+  background-color: grey;
+  margin: 5px;
+}

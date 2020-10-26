@@ -1,15 +1,22 @@
 .main{
-  background-color:gray;
+  background-color: #f5b971;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 10px;
-  padding: 0 1.2rem;
+  padding: 5px;
   margin: 10px;
   border-radius: 10px;
+  
 }
 .display {
-  border: black, 2px,solid;
+  border: black 2px solid;
+  padding: 10px;
+  margin: 10px;
+  
 }
 .history{
-  border: solid, black, 2px;
+  border: solid black 2px;
+  padding: 10px;
+  margin: 10px;
 }
+

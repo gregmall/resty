@@ -22,8 +22,7 @@ describe('HistoryItem component', () => {
           method: "DELETE"
         }
       ]}
-      url="www.awebwsite.com"
-      method="GET"
+    
       />);
       expect(asFragment()).toMatchSnapshot();
   })

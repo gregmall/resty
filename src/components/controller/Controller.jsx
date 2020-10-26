@@ -13,7 +13,7 @@ const Controller = ({
 }) => (
 
   <form onSubmit={onSubmit} >
-    <h1>RESTy</h1>
+  
   <label htmlFor="url">ENTER URL</label>
   <input
     
