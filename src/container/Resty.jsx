@@ -53,11 +53,12 @@ render() {
             onChange={this.handleChange} 
             onSubmit={this.handleSubmit}
          />
-    
+          
           <Display result= {result} />
         </div>
    
       <div className={styles.history}>
+         <h2>History</h2>
           <HistoryList history = {history}/>
       </div>
    

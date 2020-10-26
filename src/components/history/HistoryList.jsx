@@ -7,7 +7,6 @@ const HistoryList = ({ history }) => {
   console.log(history)
   return history.map(result => (
     <>
-    <h2>History</h2>
       <HistoryItem key ={ result.url + result.method }  {...result}/>
     </>
   ));
